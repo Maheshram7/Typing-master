@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Shojumaru&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <title>Type Master</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1 id="tm">Type Master</h1>
+    <div id="diff">
+        <h2>Select Difficulty level</h2>
+
+        <form id="sel">
+            <input type="radio" id="easy" value="EASY" name="dif" checked="true">
+            <label for="easy">EASY</label></input>
+            <input type="radio" id="normal" value="NORMAL" name="dif" >
+            <label for="normal">NORMAL</label></input>
+            <input type="radio" id="hard" value="HARD" name="dif" >
+            <label for="hard">HARD</label></input><br /><br />
+            <button type="submit" id="sub" onclick="difficulty()">Play</button>
+        </form>
+    </div>
+
+    <div id="over">
+        <h2>GAME OVER</h2>
+        <h3>Your Score: <br /><br /><span id="scors">0</span></h3>
+
+        <button id="bck" onclick="main()">Back To Main Menu</button>
+    </div>
+
+    <div id="container">
+        <header id="head">
+            <h2>SPEED TYPE</h2>
+        </header>
+        <div id="words"></div>
+
+        <div id="input">
+            <input type="text" id="inp" />
+        </div>
+
+        <div id="time">
+            Time: <span id="sec"></span>
+            <div id="score">Score: <span id="scor"> 0</span></div>
+        </div>
+
+        <div id="score"></div>
+        <div id="back">
+            <button id="bck" onclick="main()">Back To Main Menu</button>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
